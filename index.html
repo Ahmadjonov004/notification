@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choice</title>
+    <style>
+      @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(162, 58, 180);
+        background: linear-gradient(
+          90deg,
+          rgba(162, 58, 180, 1) 0%,
+          rgba(71, 186, 255, 1) 100%
+        );
+      }
+      .choice {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+      }
+      .choice a {
+        text-decoration: none;
+        color: black;
+      }
+      .choice .btn {
+        background-color: #ffffff;
+        color: rebeccapurple;
+        font-family: inherit;
+        font-weight: bold;
+        padding: 1rem 2.5rem;
+        border-radius: 15px;
+        border: none;
+        cursor: pointer;
+      }
+      .choice .btn:hover{
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        transition: all 0.5s ease;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="choice">
+      <a href="./faq/faq.html"><div class="btn">FAQ</div></a>
+      <a href="./notification/notification.html"
+        ><div class="btn">Notification</div></a
+      >
+    </div>
+  </body>
+</html>
